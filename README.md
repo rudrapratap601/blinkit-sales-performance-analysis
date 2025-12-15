@@ -1,124 +1,129 @@
-# 🛒 Retail Sales Analytics Dashboard & EDA
+# 🛒 Blinkit End-to-End Data Analysis Project  
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)]()
-[![NumPy](https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)]()
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-008AFF?style=for-the-badge)]()
-[![Seaborn](https://img.shields.io/badge/Seaborn-2E8BC0?style=for-the-badge)]()
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)]()
-[![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)]()
-[![Data Analysis](https://img.shields.io/badge/Data%20Analysis-0A66C2?style=for-the-badge)]()
+[![Python](https://img.shields.io/badge/Python-EDA-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![SQL](https://img.shields.io/badge/SQL-Analytics-orange?logo=mysql&logoColor=white)](#)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboards-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black?logo=github)](#)
+[![Status](https://img.shields.io/badge/Project_Status-In%20Progress-lightgrey)](#)
 
 ---
 
-## 📌 Project Overview
-This project analyzes retail sales data to uncover revenue trends, top-selling products, customer purchasing behavior, and seasonal demand patterns.
+## 🎯 Project Overview  
 
-The goal is to build:
-- A clean EDA pipeline  
-- KPI calculations  
-- Clear visualizations  
-- A professional Power BI dashboard  
-- Actionable business insights  
+This project is an **end-to-end Data Analytics case study** based on Blinkit sales and customer data.  
+The objective is to demonstrate **real-world Data Analyst skills** by working across the full analytics pipeline — from **raw messy data** to **business-ready dashboards**.
+
+The project is designed to closely resemble **actual internship and industry workflows**, rather than a toy or academic example.
 
 ---
 
-## 📂 Repository Structure
+## 🧠 Why Python and SQL Are Used Separately  
+
+This project intentionally uses **two different datasets** and tools, each for a specific purpose:
+
+### 🔹 Python (Raw / Messy Dataset)  
+- Used for **data assessment, cleaning, and exploratory data analysis (EDA)**
+- Simulates real-world scenarios where data quality issues exist
+- Best suited for understanding distributions, patterns, and anomalies
+
+### 🔹 SQL (Clean Relational Dataset)  
+- Used for **business-focused analytical queries**
+- Works on structured, multi-table data (customers, orders, products, etc.)
+- Best suited for joins, aggregations, CTEs, subqueries, and window functions
+
+This separation reflects how analysts typically work with **different data layers** in real organizations.
+
+---
+
+## 🧰 Tech Stack  
+
+| Category | Tools |
+|--------|------|
+| **Programming** | Python |
+| **Libraries** | Pandas, NumPy, Matplotlib, Seaborn |
+| **Database** | MySQL |
+| **BI Tool** | Power BI |
+| **IDE** | Jupyter Notebook |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📂 Project Structure  
+
 ```
-retail-sales-analytics/
-│── data/
-│ └── raw/
-│ └── processed/
+
+Blinkit_End_to_End_Analysis/
 │
-│── notebooks/
-│ └── 01_data_cleaning.ipynb
-│ └── 02_eda.ipynb
-│ └── 03_insights.ipynb
+├── data/
+│ ├── raw/ # Original messy dataset (unchanged)
+│ ├── relational/ # Clean multi-table dataset for SQL analysis
+│ └── processed/ # Cleaned and aggregated outputs
 │
-│── visuals/
-│ └── charts/
-│ └── dashboard_screenshots/
+├── notebooks/
+│ ├── 01_data_assessment.ipynb
+│ ├── 02_data_cleaning.ipynb
+│ ├── 03_python_eda.ipynb
+│ ├── 04_sql_analysis.ipynb
+│ └── 05_insight_summary.ipynb
 │
-│── powerbi/
-│ └── retail_dashboard.pbix
+├── dashboards/
+│ └── blinkit_powerbi.pbix
 │
-│── src/
-│ └── clean_data.py
-│ └── generate_kpis.py
-│ └── utils.py
-│
-│── reports/
-│ └── insights_report.pdf
-│
-│── README.md
+└── README.md
 
 ```
 
 
 ---
 
-## 🎯 Objectives
-- Clean and preprocess raw sales data  
-- Explore customer, product, and time-based patterns  
-- Build KPIs such as:
-  - Total Revenue  
-  - Profit Margin  
-  - Customer Lifetime Value  
-  - Average Order Value  
-- Visualize trends using Matplotlib and Seaborn  
-- Build a Power BI reporting dashboard  
-- Provide business recommendations  
+## 🔍 Analysis Workflow  
+
+1. **Data Assessment** – Understanding structure, quality, and limitations of raw data  
+2. **Data Cleaning** – Handling missing values, inconsistencies, and data types  
+3. **Exploratory Data Analysis (Python)** – Identifying trends and patterns  
+4. **SQL Analysis** – Answering business questions using analytical SQL  
+5. **Insight Consolidation** – Interpreting results in business terms  
+6. **Dashboard Creation** – Presenting insights through Power BI  
 
 ---
 
-## 📊 Dashboard Preview
-(Add screenshots inside `visuals/dashboard_screenshots/`)
+## 📊 Dashboard Objective  
+
+The Power BI dashboard is designed to:
+- Track key performance indicators (KPIs)
+- Highlight sales and customer behavior trends
+- Support data-driven decision making
+- Present insights clearly to non-technical stakeholders
 
 ---
 
-## 🔍 Key Insights
-- Product Category A generates the highest revenue  
-- Weekend sales outperform weekdays by X%  
-- Customers aged 25–35 contribute most to total orders  
-- Returning customers have a higher AOV than new customers  
-- Seasonal spikes occur during November–January  
+## 🚧 Project Status  
+
+**In Progress**  
+Insights, queries, and dashboard visuals will be added and refined as analysis progresses.
 
 ---
 
-## ⚙️ Tech Stack
-### Languages & Libraries
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
+## 🎓 Learning Outcomes  
 
-### BI Tools
-- Power BI  
-
-### Tools
-- Jupyter Notebook  
-- Git & GitHub  
+- Handling messy real-world datasets  
+- Performing structured exploratory analysis  
+- Writing analytical SQL queries  
+- Translating data into business insights  
+- Building professional dashboards  
 
 ---
 
-## 🧠 Business Decisions From This Project
-Based on insights, the business can:
-- Optimize product stocking  
-- Identify high-value customers  
-- Improve marketing for peak seasons  
-- Reduce inventory waste  
-- Increase profit margins  
-- Target customers with personalized offers  
+## 🧠 Author  
+
+**Rudrapratap Sarma**  
+🎯 *Aspiring Data Analyst | Data Scientist | AI & ML Enthusiast*  
+🎓 Manipal University Jaipur (Online BCA)  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-rudrapratap601-black?logo=github)](https://github.com/rudrapratap601)
 
 ---
 
-## 📁 Dataset
-Source: *(Add dataset link here — example: Kaggle Retail Sales Dataset)*
-
----
-
-## 👨‍💻 Author
-**Rudra Pratap**  
-Aspiring Data Scientist | ML Engineer | Data Analyst
-
+⭐ *If you find this project useful, consider starring the repository!*  
