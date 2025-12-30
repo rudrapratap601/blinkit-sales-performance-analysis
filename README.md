@@ -1,37 +1,22 @@
-# 🛒 Blinkit Sales Performance Analysis
+# 🛒 Blinkit Sales Performance Analysis (Business Data Analysis)
 
 [![Python](https://img.shields.io/badge/Python-EDA-blue?logo=python&logoColor=white)](https://www.python.org/)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-lightblue?logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-green)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-teal)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboards-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](#)
 [![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black?logo=github)](#)
-[![Status](https://img.shields.io/badge/Project_Status-In%20Progress-lightgrey)](#)
+
 
 ---
 
 ## 🎯 Project Overview  
 
-This project is an **end-to-end Data Analytics case study** based on Blinkit sales and customer data.  
-The objective is to demonstrate **real-world Data Analyst skills** by working across the full analytics pipeline — from **raw messy data** to **business-ready dashboards**.
-
-The project is designed to closely resemble **actual internship and industry workflows**, rather than a toy or academic example.
-
----
-
-## 🧠 Why Python and SQL Are Used Separately  
-
-This project intentionally uses **two different datasets** and tools, each for a specific purpose:
-
-### 🔹 Python (Raw / Messy Dataset)  
-- Used for **data assessment, cleaning, and exploratory data analysis (EDA)**
-- Simulates real-world scenarios where data quality issues exist
-- Best suited for understanding distributions, patterns, and anomalies
-
-### 🔹 SQL (Clean Relational Dataset)  
-- Used for **business-focused analytical queries**
-- Works on structured, multi-table data (customers, orders, products, etc.)
-- Best suited for joins, aggregations, CTEs, subqueries, and window functions
-
-This separation reflects how analysts typically work with **different data layers** in real organizations.
+## 📌 Project Overview
+This project performs an end-to-end business data analysis on a grocery retail dataset inspired by Blinkit.  
+The objective is to understand sales drivers, outlet performance, and product category trends, and to translate analytical findings into actionable business recommendations.
 
 ---
 
@@ -41,7 +26,6 @@ This separation reflects how analysts typically work with **different data layer
 |--------|------|
 | **Programming** | Python |
 | **Libraries** | Pandas, NumPy, Matplotlib, Seaborn |
-| **Database** | MySQL |
 | **BI Tool** | Power BI |
 | **IDE** | Jupyter Notebook |
 | **Version Control** | Git & GitHub |
@@ -55,19 +39,19 @@ This separation reflects how analysts typically work with **different data layer
 Blinkit_End_to_End_Analysis/
 │
 ├── data/
-│ ├── raw/ # Original messy dataset (unchanged)
-│ ├── relational/ # Clean multi-table dataset for SQL analysis
-│ └── processed/ # Cleaned and aggregated outputs
+│ ├── raw/
+|       └── blinkit_grocery_data.xlsx
+│ └── processed/
+|        └── cleanned_blinkit_grocery_data.xlsx
 │
 ├── notebooks/
 │ ├── 01_data_assessment.ipynb
 │ ├── 02_data_cleaning.ipynb
 │ ├── 03_python_eda.ipynb
-│ ├── 04_sql_analysis.ipynb
-│ └── 05_insight_summary.ipynb
+│ └── 04_insight_summary_and_recommendations.ipynb
 │
 ├── dashboards/
-│ └── blinkit_powerbi.pbix
+│ └── blinkit_dashboard.pbix
 │
 └── README.md
 
@@ -76,14 +60,46 @@ Blinkit_End_to_End_Analysis/
 
 ---
 
-## 🔍 Analysis Workflow  
+## 🔄 Project Workflow
+The analysis follows a structured, industry-standard approach:
 
-1. **Data Assessment** – Understanding structure, quality, and limitations of raw data  
-2. **Data Cleaning** – Handling missing values, inconsistencies, and data types  
-3. **Exploratory Data Analysis (Python)** – Identifying trends and patterns  
-4. **SQL Analysis** – Answering business questions using analytical SQL  
-5. **Insight Consolidation** – Interpreting results in business terms  
-6. **Dashboard Creation** – Presenting insights through Power BI  
+1. **Data Assessment**
+   - Examined dataset structure, missing values, duplicates, and data quality issues.
+   - Identified inconsistencies and columns requiring preprocessing.
+
+2. **Data Cleaning & Preprocessing**
+   - Handled missing and inconsistent values.
+   - Standardized column names and data types.
+   - Prepared a clean dataset for analysis.
+
+3. **Exploratory Data Analysis (EDA)**
+   - Analyzed sales distribution and variability.
+   - Studied category-wise, outlet-wise, and location-based sales patterns.
+   - Explored relationships between sales and numerical attributes such as ratings, visibility, and item weight.
+
+4. **Insight Summary**
+   - Synthesized EDA findings into high-level business insights.
+   - Focused on demand drivers, outlet strategy, and category performance.
+
+5. **Business Recommendations**
+   - Provided actionable recommendations related to inventory planning, outlet optimization, and regional growth strategy.
+
+---
+
+## 📊 Key Business Insights
+- Sales performance is primarily driven by product category and outlet strategy rather than individual numerical attributes.
+- Fruits & Vegetables and Snack Foods act as the core revenue-driving categories.
+- Supermarket Type1 outlets contribute the majority of total sales.
+- Medium-sized outlets often outperform larger outlets, indicating efficient demand–assortment alignment.
+- Tier 2 and Tier 3 cities show strong and consistent sales performance.
+
+---
+
+## 🛠️ Tools & Technologies
+- **Python** (Pandas, NumPy)
+- **Data Visualization** (Matplotlib, Seaborn)
+- **Dashboarding** (Power BI)
+- **Notebook Environment** (Jupyter Notebook)
 
 ---
 
@@ -97,10 +113,13 @@ The Power BI dashboard is designed to:
 
 ---
 
-## 🚧 Project Status  
-
-**In Progress**  
-Insights, queries, and dashboard visuals will be added and refined as analysis progresses.
+## 🎯 Skills Demonstrated
+- Business Data Analysis
+- Data Assessment & Cleaning
+- Exploratory Data Analysis (EDA)
+- Insight Generation
+- Dashboard Reporting
+- Data-Driven Decision Making
 
 ---
 
