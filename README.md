@@ -1,7 +1,6 @@
-# 🛒 Blinkit End-to-End Data Analysis Project  
+# 🛒 Blinkit Sales Performance Analysis
 
 [![Python](https://img.shields.io/badge/Python-EDA-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![SQL](https://img.shields.io/badge/SQL-Analytics-orange?logo=mysql&logoColor=white)](#)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboards-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](#)
 [![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black?logo=github)](#)
