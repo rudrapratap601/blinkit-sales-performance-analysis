@@ -136,7 +136,7 @@ The Power BI dashboard is designed to:
 ## 🧠 Author  
 
 **Rudrapratap Sarma**  
-🎯 *Aspiring Data Analyst | Data Scientist | AI & ML Enthusiast*  
+🎯 *Data Analyst | Data Scientist | AI & ML Enthusiast*  
 🎓 Manipal University Jaipur (Online BCA)  
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/)
